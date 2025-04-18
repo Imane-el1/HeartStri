@@ -1,0 +1,47 @@
+import javax.swing.*;
+import java.awt.*;
+
+class Main extends JFrame {
+    JLabel cards;
+    JLabel remainingCards1;
+    JLabel remainingCards2;
+    JLabel mana1;
+    JLabel mana2;
+
+    public Main() {
+        setTitle("Hearthstone");
+        setSize(800, 600);
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+        // Set background image
+        JLabel background = new JLabel(new ImageIcon("src/images/background image.jpg"));
+        background.setLayout(new GridLayout(3, 4)); // Grid layout for components
+        setContentPane(background);
+
+        // Initialize labels
+        cards = new JLabel("Cards in hand");
+        remainingCards1 = new JLabel("Player 1 - Remaining Cards");
+        remainingCards2 = new JLabel("Player 2 - Remaining Cards");
+        mana1 = new JLabel("Player 1 - Remaining Mana");
+        mana2 = new JLabel("Player 2 - Remaining Mana");
+
+        // Add components to background
+        background.add(remainingCards1);
+        background.add(remainingCards2);
+        background.add(mana1);
+        background.add(mana2);
+        background.add(cards);
+
+        // Fill remaining cells to prevent layout issues
+        for (int i = 0; i < 7; i++) {
+            background.add(new JLabel(""));
+        }
+
+        setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(Main::new);
+    }
+}

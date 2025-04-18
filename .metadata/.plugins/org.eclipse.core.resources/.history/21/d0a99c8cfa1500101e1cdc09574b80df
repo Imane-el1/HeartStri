@@ -1,0 +1,27 @@
+package main;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+class BackgroundImageJFrame extends JFrame {
+	JLabel l1;
+	
+	public BackgroundImageJFrame() {
+		setTitle("Hearthstone");
+		setSize(800, 600);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setVisible(true);
+		
+		setLayout(new BorderLayout());
+		setContentPane(new JLabel(new ImageIcon("src/images/background image.jpg")));
+		setLayout(new FlowLayout());
+		setSize(800, 600);
+	}
+	
+}
+
+public static void main(String args[]) {
+	new BackgroundImageJFrame();
+}
+

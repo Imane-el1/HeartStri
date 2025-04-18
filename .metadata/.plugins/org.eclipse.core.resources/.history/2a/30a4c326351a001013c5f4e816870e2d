@@ -1,0 +1,28 @@
+package cards;
+
+import Heros.Hero;
+
+public class SpellCard extends Card {
+	
+	private Card card;
+	private String effect;
+	private Hero player;
+	
+	public SpellCard() {
+		
+		card = new Card();
+		player = new Hero();
+		
+		player.castOn(this);
+	}
+	
+	public String getEffect() {
+		return effect;
+	}
+
+	public void setEffect(String effect) {
+		this.effect = effect;
+	}
+
+
+}

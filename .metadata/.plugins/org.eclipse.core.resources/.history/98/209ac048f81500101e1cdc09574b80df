@@ -1,0 +1,36 @@
+package main;
+
+import javax.swing.*;
+import java.awt.*;
+
+
+public class Main {
+	public static void main(String[] args) {
+		JFrame frame = new JFrame("Hearthstone");
+		frame.setSize(800, 600);
+		frame.setVisible(true);
+		
+		frame.setContentPane(new BackgroundPanel());
+		
+		
+
+	} 
+}
+
+
+
+
+class BackgroundPanel extends JPanel {
+	private Image backgroundImage;
+	
+	public BackgroundPanel() {
+		backgroundImage = new ImageIcon("src/images/background image.jpg").getImage();
+	}
+	
+	@Override
+	
+	protected void paintComponent(Graphics g) {
+		super.paintComponent(g);
+		g.drawImage(backgroundImage, 0, 0, getWidth(), getHeight(), this);
+	}
+}

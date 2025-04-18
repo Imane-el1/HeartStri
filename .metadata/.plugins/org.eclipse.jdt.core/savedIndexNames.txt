@@ -1,0 +1,11 @@
+INDEX VERSION 1.134+C:\Users\dell\Documents\Java\Fantaisie\workspace\HearthStone\.metadata\.plugins\org.eclipse.jdt.core
+4199762764.index
+1398620193.index
+1496160814.index
+876516808.index
+4233780825.index
+1865797976.index
+2186508396.index
+1996374965.index
+1227115623.index
+1848173949.index

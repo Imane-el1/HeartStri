@@ -1,0 +1,29 @@
+package cards;
+
+import cards.Card;
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class Deck {
+	
+	
+	public Deck() {
+		
+		private List<Card> cards;
+		
+		Card card = new Card();
+		cards = new ArrayList<>() ;
+		
+	}
+	
+	
+	
+	
+	public Card drawCard() {
+		
+		return card;
+	}
+	
+
+}

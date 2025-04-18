@@ -1,0 +1,42 @@
+package cartes;
+
+public class Carte {
+	
+	protected String name;
+	protected int manaCost;
+	protected int attackNumber;
+	
+	
+	
+	public int getAttacks() {
+		return attackNumber;
+	}
+	
+	
+	public int setAttacks() {
+		return this.attackNumber;
+	}
+	
+	
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public int getManaCost() {
+		return manaCost;
+	}
+
+
+	public void setManaCost(int manaCost) {
+		this.manaCost = manaCost;
+	}
+	
+	
+	
+}

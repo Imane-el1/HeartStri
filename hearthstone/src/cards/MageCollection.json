@@ -1,0 +1,87 @@
+{
+	"hero": {
+		"name": Jaina Proudmoore 
+	},
+	"cards" : [
+		{
+			"name": "Aile-ensorcelee pourpre",
+			"mana": 1,
+			"health": 1,
+			"attack": 2,
+			"durability": 0;
+			
+		},
+		{
+			"name": "Artificier des Arcanes",
+			"mana": 1,
+			"health": 3,
+			"attack": 1,
+			"durability": 0;
+			
+		},
+		{
+			"name": "Au fil de l'eau",
+			"mana": 1,
+			"health": 0,
+			"attack": 0,
+			"durability": 0;
+			
+		},
+		{
+			"name": "Calice de la brise marine",
+			"mana": 1,
+			"health": 0,
+			"attack": 2,
+			"durability": 0;
+			
+		},
+		{
+			"name": "Geyser de flammes",
+			"mana": 1,
+			"health": 1,
+			"attack": 2,
+			"durability": 0;
+			
+		},
+		{
+			"name": "Sanctuaire interdit",
+			"mana": 1,
+			"health": 0,
+			"attack": 0,
+			"durability": 3;
+			
+		},
+		{
+			"name": "Etincelle de vie",
+			"mana": 1,
+			"health": 0,
+			"attack": 0,
+			"durability": 0;
+			
+		},
+		{
+			"name": "Art divinatoire",
+			"mana": 2,
+			"health": 0,
+			"attack": 0,
+			"durability": 0;
+			
+		},
+		{
+			"name": "Batterie de boucliers",
+			"mana": 2,
+			"health": 0,
+			"attack": 0,
+			"durability": 0,
+			
+		},
+		{
+			"name": "Collecteur d'esprits",
+			"mana": 2,
+			"health": 1,
+			"attack": 2,
+			"durability": 0,
+		},
+		
+	]
+}

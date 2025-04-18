@@ -1,0 +1,61 @@
+package cards;
+
+import Heros.Hero;
+
+public class SpellCard extends Card {
+	
+	private Card card;
+	private SpellEffect effect;
+	private int amount;
+	private Hero player;
+
+	// Enum for spell types
+	public enum SpellEffect {
+		DAMAGE,
+		HEAL
+	}
+	
+	// Constructor
+	public SpellCard(SpellEffect effect, int amount) {
+		this.effect = effect;
+		this.amount = amount;
+		this.card = new Card();   // optional: if you need a base card
+		this.player = new Hero(); // or pass the hero from outside
+
+		// Optional: cast immediately
+		 this.player.castOn(this); 
+	}
+
+	// Getters and Setters
+	public SpellEffect getEffect() {
+		return effect;
+	}
+
+	public void setEffect(SpellEffect effect) {
+		this.effect = effect;
+	}
+
+	public int getAmount() {
+		return amount;
+	}
+
+	public void setAmount(int amount) {
+		this.amount = amount;
+	}
+
+	public Card getCard() {
+		return card;
+	}
+
+	public void setCard(Card card) {
+		this.card = card;
+	}
+
+	public Hero getPlayer() {
+		return player;
+	}
+
+	public void setPlayer(Hero player) {
+		this.player = player;
+	}
+}

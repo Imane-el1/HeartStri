@@ -1,0 +1,30 @@
+package cards;
+
+public class Card {
+	
+	protected String name;
+	protected int manaCost;
+	
+	
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public int getManaCost() {
+		return manaCost;
+	}
+
+
+	public void setManaCost(int manaCost) {
+		this.manaCost = manaCost;
+	}
+	
+	
+	
+}

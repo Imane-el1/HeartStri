@@ -1,0 +1,48 @@
+package main;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+class Main extends JFrame 
+{
+	JLabel cards;
+	JLabel remaining_cards_1;
+	JLabel remaining_cards_2;
+	JLabel mana_1;
+	JLabel mana_2;
+	
+	public Main() 
+	{
+		setTitle("Hearthstone");
+		setSize(800, 600);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setVisible(true);
+		
+		cards = new JLabel("Cards in hands");
+		remaining_cards_1 = new JLabel("Remaining Cards in hands");
+		remaining_cards_2 = new JLabel("Remaining Cards in hands");
+		mana_1 = new JLabel("Remaining Mana");
+		mana_2 = new JLabel("Remaining Mana");
+		
+		setLayout(new BorderLayout());
+		setContentPane(new JLabel(new ImageIcon("src/images/background image.jpg")));
+		setLayout(new FlowLayout());
+		add(cards);
+		add(remaining_cards_1);
+		add(remaining_cards_2);
+		add(mana_1);
+		add(mana_2);
+		
+		
+		setSize(800, 600);
+	}
+	
+	public static void main(String args[]) {
+		new Main();
+	}
+	
+}
+
+

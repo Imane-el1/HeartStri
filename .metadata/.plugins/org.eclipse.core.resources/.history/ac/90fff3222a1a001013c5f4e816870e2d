@@ -1,0 +1,10 @@
+package cards;
+
+public class Deck {
+	
+	public void drawCard() {
+		
+	}
+	
+
+}
